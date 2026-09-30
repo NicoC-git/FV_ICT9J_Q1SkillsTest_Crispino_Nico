@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Skills Test</title>
+<style>
+     body {
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           background-color: #020202c7;
+           margin: 0;
+           padding: 20px;
+           color: #000000;
+     }
+      .outer-wrapper {
+           background-color: #000000;
+           padding: 20px;
+           max-width: 1000px; 
+           margin: 0 auto;
+       }
+       .main-container {
+         display: flex;
+           gap: 20px;
+           align-items: flex-start;
+       }
+        .content-side {
+           flex: 1;
+           background-color: #cac0db;
+           padding: 30px;
+           border-radius: 15px;
+           box-shadow: 0 2px 8px rgba(176, 179, 228, 0.08);
+       }
+        .image-side {
+           flex: 1;
+       }
+        .robot-img {
+           width: 100%;
+           height: auto;
+           display: block;
+           border-radius: 4px;
+       }
+       .logo-container {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+        .school-logo {
+           width: 90px;
+           height: auto;
+       }
+       .main-title {
+           text-align: center;
+           font-size: 20px;
+           margin: 10px 0 20px 0;
+       }
+       .main-title a {
+           color: #f6f4f4;
+           text-decoration: underline;
+           font-weight: bold;
+       }
+       .intro-text {
+           font-size: 13px;
+           line-height: 1.5;
+           margin-bottom: 20px;
+       }
+       .form-group {
+           margin-bottom: 14px;
+       }
+ label, .field-label {
+           display: block;
+           font-size: 13px;
+           font-weight: bold;
+           margin-bottom: 4px;
+       }
+ input[type="text"],
+       input[type="email"],
+       select,
+       textarea {
+           width: 100%;
+           padding: 6px 8px;
+           border: 1px solid #f5f0f0;
+           border-radius: 4px;
+           font-family: inherit;
+           font-size: 13px;
+           box-sizing: border-box;
+           background-color: #61acee;
+       }
+       textarea {
+           resize: vertical;
+       }
+       .inline-group {
+           font-size: 13px;
+       }
+  .inline-group .field-label {
+           display: inline-block;
+       }
+.inline-label {
+           display: inline;
+           font-weight: normal;
+           margin-left: 2px;
+           margin-right: 12px;
+       }
+       .list-section {
+           text-align:left;
+           margin-top: 20px;
+       }
+       .list-section h2 {
+           font-size: 15px;
+           color: #1a56b0;
+           margin-bottom: 7px;
+       }
+       .list-section ul,
+       .list-section ol {
+           display: inline-block;
+           text-align: left;
+           font-size: 12px;
+           margin: 0;
+           padding-left: 20px;
+       }
+.list-section li {
+           margin-bottom: 4px;
+       }
+ .list-section a {
+           color: #d6ddee;
+           text-decoration: underline;
+       }
+.center-btn {
+           text-align: center;
+           margin-top: 20px;
+       }
+ .submit-btn {
+           background-color: #1155cc;
+           color: #ffffff;
+           border: none;
+           padding: 8px 18px;
+           font-family: inherit;
+           font-size: 12px;
+           border-radius: 4px;
+           cursor: pointer;
+       } 
+ .submit-btn:hover {
+           background-color: #a606bb;
+       }
+</style>
+
+</head>
+<body>
+    <div class= "outer-wrapper">
+        <div class="main-container">
+        <div class="content-side">
+            <div class="logo-container">
+                <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1784985566-2021.png" alt="O.B. Montessori Center Logo" class="school-logo">
+            </div>
+    
+        <h1 class="main title">
+            OBMC ROBOTICS CLUB<BR>APPLICATION FORM
+        </h1>
+
+        <p class="intro text">
+            Hello! This is the application form for OBMC's <u>Robotics Club</u>. <b>Join now!</b>
+        </p>
+
+        <form action="#" method="POST">
+        
+            <div class="form-group">
+              <label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" name="fullname required">
+            </div>
+<br>
+<br>
+            <div class="form-group">
+                       <label for="email">Email:</label>
+                       <input type="email" id="email" name="email" required>
+                   </div>
+<br>
+<br>                   
+            <div class="form-group">
+                       <label for="grade">Grade Level:</label>
+                       <select id="grade" name="grade">
+                           <option value="Grade 7" selected>Grade 7</option>
+                           <option value="Grade 8">Grade 8</option>
+                           <option value="Grade 9">Grade 9</option>
+                           <option value="Grade 10">Grade 10</option>
+                       </select>
+                   </div>
+<br>
+<br>                   
+            <div class="form-group">
+                        <label for="section">Section</label>
+                        <select id="section" name="section">
+                            <option value="Emerald">Emerald</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="Sapphire">Sapphire</option>
+                            <option value="Topaz">Topaz</option>
+                            <option value="Jade">Jade</option>
+                        </select>
+            </div>
+<br>
+<br>
+<div class="form-group inline-group">
+                       <span class="field-label">Gender:</span>
+                       <input type="radio" id="male" name="gender" value="Male">
+                       <label for="male" class="inline-label">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                       <label for="female" class="inline-label">Female</label>
+</div>
+<br>
+<br>
+<div class="form-group inline-group">
+                       <input type="checkbox" id="coding" name="skills" value="Coding">
+                       <label for="coding" class="inline-label">Coding</label>
+
+
+                       <input type="checkbox" id="design" name="skills" value="Design">
+                       <label for="design" class="inline-label">AI Learning</label>
+
+
+                       <input type="checkbox" id="electronics" name="skills" value="Electronics">
+                       <label for="electronics" class="inline-label">Math and/or Physics</label>
+                   </div>
+<br>
+<br>
+<div class="form-group">
+                       <label for="reason to join">Explain why you would like to join Robotics Club:</label>
+                       <textarea id="reason to join" name="reason to join" rows="4"></textarea>
+                   </div>
+<br>
+<br>
+  <div class="list-section">
+            <h2>Activities We Offer:</h2>
+               <ul>
+                        <li>Basic Robotic Function THeory</li>
+                           <li>Robotic Construction</li>
+                           <li>Robotic Programming</li>
+                       </ul>
+                   </div>
+<br>
+<br>
+                    <div class="list-section">
+                       <h2>Links to help you understand more about Robotics:</h2>
+                       <ol>
+                           <li><a href="https://orbtronics.co/insights/5-reasons-why-children-should-join-a-robotics-club" target="_blank">Robotics.org</a></li>
+                           <li><a href="https://www.theseus.fi/bitstream/handle/10024/37806/Shakhatreh_Fareed.pdf" target="_blank">FIRST Robotics</a></li>
+                       </ol>
+                   </div>
+<br>
+                    <div class="form-group right-btn">
+                       <button type="submit" class="submit-btn">Submit</button>
+                   </div>
+               </form>
+           </div>
+
+            <div class="image-side">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh-K7CRplfPeIoqzjew0Vd7ulucPXSxYEKaL43YjU2w2v-IAUTWhoQSL4&s=10" alt="Robot Image" class="robot-img">
+           </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
